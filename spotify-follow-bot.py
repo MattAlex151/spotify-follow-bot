@@ -89,4 +89,4 @@ if token:
             logging.info(msg)
             sp.user_follow_artists(batch)
 else:
-    print("Can't get token for", username)
+    logging.error('Error getting token for {0}'.format(username))
